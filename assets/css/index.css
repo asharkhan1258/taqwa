@@ -1,0 +1,414 @@
+/* ==================================================
+   NEW TAQWA TOURS SECTIONS
+================================================== */
+
+.section {
+    padding: 75px 0;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #153d2e;
+    margin-bottom: 18px;
+    line-height: 1.25;
+}
+
+.section-kicker {
+    display: inline-block;
+    color: #c99b36;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.muted {
+    color: #666;
+    line-height: 1.8;
+}
+
+.bg-soft {
+    background: #f7f8f6;
+}
+
+/* ==================================================
+   BISMILLAH / INTRO SECTION
+================================================== */
+
+.section:nth-of-type(1) img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.section:nth-of-type(1) .service-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+}
+
+.upcoming-image-grid img {
+    height: 110px !important;
+    object-fit: cover;
+    border-radius: 10px !important;
+}
+
+
+/* ==================================================
+   ATOL SECTION
+================================================== */
+
+.section:nth-of-type(3) {
+    background: #f7f8f6;
+}
+
+.section:nth-of-type(3) .bg-white {
+    border-radius: 20px;
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.08);
+}
+
+.section:nth-of-type(3) img {
+    width: 100%;
+    max-height: 430px;
+    object-fit: contain;
+    background: #fff;
+    padding: 15px;
+    border-radius: 18px;
+}
+
+.section:nth-of-type(3) h4 {
+    color: #153d2e;
+    font-weight: 700;
+}
+
+.section:nth-of-type(3) a {
+    color: #c99b36;
+    font-weight: 600;
+}
+
+
+/* ==================================================
+   FACILITIES SECTION
+================================================== */
+
+.section:nth-of-type(5) .service-card {
+    height: 100%;
+    background: #fff;
+    padding: 30px 22px;
+    border-radius: 16px;
+    border: 1px solid #eeeeee;
+    transition: 0.3s ease;
+}
+
+.section:nth-of-type(5) .service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.10);
+    border-color: #d5b25f;
+}
+
+.section:nth-of-type(5) .service-icon {
+    width: 62px;
+    height: 62px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: #153d2e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.section:nth-of-type(5) h3 {
+    color: #153d2e;
+    margin-bottom: 12px;
+}
+
+
+/* ==================================================
+   NOT INCLUDED SECTION
+================================================== */
+
+.section:nth-of-type(7) {
+    background: #f8f9f7;
+}
+
+.section:nth-of-type(7) .row {
+    align-items: center;
+}
+
+.section:nth-of-type(7) p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.section:nth-of-type(7) .btn {
+    margin-top: 10px;
+}
+
+
+/* ==================================================
+   FLIGHTS + HAJJ SECTION
+================================================== */
+
+.section:nth-of-type(8) .service-card {
+    background: #fff;
+    border: 1px solid #eeeeee;
+    border-radius: 18px;
+    padding: 32px;
+    height: 100%;
+    transition: 0.3s ease;
+}
+
+.section:nth-of-type(8) .service-card:hover {
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.09);
+    transform: translateY(-5px);
+}
+
+.section:nth-of-type(8) .service-icon {
+    width: 65px;
+    height: 65px;
+    background: #153d2e;
+    color: #fff;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.section:nth-of-type(8) h3 {
+    color: #153d2e;
+}
+
+
+/* ==================================================
+   TEAM SECTION
+================================================== */
+
+.section:nth-of-type(9) .service-card {
+    background: #fff;
+    border: none;
+    border-radius: 18px;
+    padding: 15px 15px 28px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+}
+
+.section:nth-of-type(9) .service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.section:nth-of-type(9) .service-card img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 14px !important;
+    margin-bottom: 20px;
+}
+
+.section:nth-of-type(9) h3 {
+    color: #153d2e;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+
+/* ==================================================
+   NEWS / BLOG SECTION
+================================================== */
+
+.section:nth-of-type(10) .service-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 18px;
+    padding: 12px 12px 25px;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.section:nth-of-type(10) .service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.10);
+}
+
+.section:nth-of-type(10) .service-card img {
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 13px !important;
+    margin-bottom: 20px;
+}
+
+.section:nth-of-type(10) h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    color: #153d2e;
+    padding: 0 10px;
+}
+
+.section:nth-of-type(10) p {
+    padding: 0 10px;
+}
+
+
+/* ==================================================
+   FAQ SECTION
+================================================== */
+
+.faq {
+    background: #f7f8f6;
+}
+
+.faq .accordion {
+    max-width: 900px;
+    margin: auto;
+}
+
+.faq .accordion-item {
+    border: none;
+    margin-bottom: 14px;
+    border-radius: 12px !important;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+}
+
+.faq .accordion-button {
+    background: #fff;
+    color: #153d2e;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 20px 22px;
+}
+
+.faq .accordion-button:not(.collapsed) {
+    background: #153d2e;
+    color: #fff;
+    box-shadow: none;
+}
+
+.faq .accordion-button:focus {
+    box-shadow: none;
+}
+
+.faq .accordion-body {
+    padding: 22px;
+    line-height: 1.8;
+    color: #666;
+}
+
+
+/* ==================================================
+   GENERAL SERVICE CARDS
+================================================== */
+
+.service-card {
+    transition: all 0.3s ease;
+}
+
+.service-card p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==================================================
+   BUTTONS
+================================================== */
+
+.btn-brand {
+    background: #153d2e;
+    color: #fff;
+    border: 2px solid #153d2e;
+    padding: 11px 24px;
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+.btn-brand:hover {
+    background: #c99b36;
+    border-color: #c99b36;
+    color: #fff;
+}
+
+.btn-outline-brand {
+    border: 2px solid #153d2e;
+    color: #153d2e;
+    padding: 10px 22px;
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+.btn-outline-brand:hover {
+    background: #153d2e;
+    color: #fff;
+}
+
+
+/* ==================================================
+   MOBILE RESPONSIVE
+================================================== */
+
+@media (max-width: 991px) {
+
+    .section {
+        padding: 55px 0;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .section:nth-of-type(9) .service-card img {
+        height: 280px;
+    }
+
+    .section:nth-of-type(10) .service-card img {
+        height: 210px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .section {
+        padding: 45px 0;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .section-kicker {
+        font-size: 12px;
+    }
+
+    .section:nth-of-type(3) .bg-white {
+        padding: 25px !important;
+    }
+
+    .section:nth-of-type(5) .service-card,
+    .section:nth-of-type(8) .service-card {
+        padding: 24px 18px;
+    }
+
+    .section:nth-of-type(9) .service-card img {
+        height: 330px;
+    }
+
+    .section:nth-of-type(10) .service-card img {
+        height: 230px;
+    }
+
+    .upcoming-image-grid img {
+        height: 80px !important;
+    }
+}

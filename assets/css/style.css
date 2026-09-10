@@ -1,0 +1,585 @@
+/* =========================================================
+   Taqwa Tours Style Website
+   Clean custom styles - Bootstrap handles the main layout.
+   ========================================================= */
+
+:root {
+  --green: #174d3c;
+  --green-dark: #0d3528;
+  --green-soft: #eaf3ef;
+  --gold: #d9b85f;
+  --gold-dark: #a38127;
+  --text: #1d2924;
+  --muted: #66756e;
+  --cream: #f9f7ef;
+  --white: #ffffff;
+  --shadow: 0 14px 42px rgba(13, 53, 40, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.7;
+}
+
+/* ---------- Top Bar ---------- */
+.topbar {
+  background: var(--green-dark);
+  color: var(--white);
+  font-size: 0.88rem;
+}
+
+.topbar a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.topbar i {
+  color: var(--gold);
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  padding: 0.75rem 0;
+  background: var(--white);
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.07);
+}
+
+.navbar-brand img {
+  width: 150px;
+  max-width: 48vw;
+  height: 80px;
+}
+
+.navbar .nav-link {
+  padding: 0.7rem 0.78rem !important;
+  color: #20332b !important;
+  font-weight: 600;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--green) !important;
+}
+
+.dropdown-menu {
+  padding: 0.75rem;
+  border: 0;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+.dropdown-item {
+  padding: 0.55rem 0.7rem;
+  border-radius: 8px;
+}
+
+.dropdown-item:hover {
+  color: var(--green);
+  background: var(--green-soft);
+}
+
+/* ---------- Buttons ---------- */
+.btn-brand {
+  padding: 0.7rem 1.1rem;
+  color: #15372c;
+  background: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.btn-brand:hover {
+  color: #102d24;
+  background: #c6a347;
+  border-color: #c6a347;
+}
+
+.btn-outline-brand {
+  color: var(--green);
+  border: 1px solid var(--green);
+  font-weight: 700;
+}
+
+.btn-outline-brand:hover {
+  color: var(--white);
+  background: var(--green);
+}
+
+/* ---------- Home Hero ---------- */
+.hero {
+  min-height: 690px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: var(--white);
+  background:
+    linear-gradient(90deg, rgba(5, 37, 27, 0.92), rgba(5, 37, 27, 0.62)),
+    url("../img/hero.svg") center / cover no-repeat;
+}
+
+.hero .eyebrow,
+.page-hero .eyebrow {
+  color: #f2d884;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hero h1,
+.page-hero h1,
+.section-title,
+.content-copy h2,
+.content-copy h3 {
+  font-family: Georgia, serif;
+  font-weight: 700;
+}
+
+.hero h1 {
+  max-width: 820px;
+  font-size: clamp(2.7rem, 5vw, 3.5rem);
+  line-height: 1.04;
+}
+
+.hero p {
+  max-width: 720px;
+  color: #eef6f1;
+  font-size: 1.1rem;
+}
+
+.hero-card {
+  padding: 24px;
+  color: var(--text);
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- Forms ---------- */
+.form-control,
+.form-select {
+  padding: 0.72rem 0.8rem;
+  border-color: #d8e0dc;
+  border-radius: 8px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 0.2rem rgba(23, 77, 60, 0.12);
+}
+
+.quote-strip {
+  margin-top: -75px;
+  position: relative;
+  z-index: 5;
+}
+
+.quote-box {
+  padding: 24px;
+  background: var(--white);
+  border-top: 5px solid var(--gold);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+/* ---------- General Sections ---------- */
+.section {
+  padding: 86px 0;
+}
+
+.section-sm {
+  padding: 58px 0;
+}
+
+.section-title {
+  color: var(--green-dark);
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.section-kicker {
+  color: var(--gold-dark);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.bg-soft {
+  background: var(--cream);
+}
+
+.bg-green {
+  color: var(--white);
+  background: var(--green-dark);
+}
+
+.bg-green .section-title {
+  color: var(--white);
+}
+
+/* ---------- Cards ---------- */
+.card-soft,
+.package-card,
+.hotel-card,
+.service-card,
+.team-card,
+.blog-card {
+  height: 100%;
+  overflow: hidden;
+  background: var(--white);
+  border: 0;
+  border-radius: 18px;
+  box-shadow: 0 9px 28px rgba(13, 53, 40, 0.1);
+}
+
+.package-card img,
+.hotel-card img,
+.blog-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.package-card .stars {
+  color: var(--gold);
+}
+
+.price {
+  color: var(--green);
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+.service-card {
+  padding: 26px;
+  transition: transform 0.25s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+}
+
+.service-icon {
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  color: var(--green);
+  background: var(--green-soft);
+  border-radius: 16px;
+  font-size: 1.6rem;
+}
+
+.team-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.team-card .card-body {
+  padding: 22px;
+}
+
+.blog-meta {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+/* ---------- Inner Page Hero ---------- */
+.page-hero {
+  padding: 110px 0 95px;
+  color: var(--white);
+  background:
+    linear-gradient(90deg, rgba(4, 38, 27, 0.93), rgba(4, 38, 27, 0.68)),
+    url("../img/hero.svg") center / cover no-repeat;
+}
+
+.page-hero h1 {
+  font-size: clamp(2.35rem, 4vw, 4.2rem);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #d3ddd7;
+}
+
+.breadcrumb a {
+  color: #f3d77e;
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: var(--white);
+}
+
+/* ---------- Content Blocks ---------- */
+.info-band {
+  padding: 28px;
+  color: var(--white);
+  background: var(--green);
+  border-radius: 18px;
+}
+
+.info-band i {
+  color: var(--gold);
+}
+
+.feature-pill {
+  height: 100%;
+  padding: 16px;
+  background: #f1f6f3;
+  border: 1px solid #dde9e3;
+  border-radius: 14px;
+}
+
+.feature-pill i {
+  color: var(--green);
+  font-size: 1.2rem;
+}
+
+.why-list {
+  padding: 0;
+  list-style: none;
+}
+
+.why-list li {
+  display: flex;
+  gap: 0.8rem;
+  margin: 0.7rem 0;
+}
+
+.why-list i {
+  margin-top: 0.25rem;
+  color: var(--gold-dark);
+}
+
+.content-copy h2,
+.content-copy h3 {
+  margin-top: 2rem;
+  color: var(--green-dark);
+}
+
+.content-copy p {
+  color: #4f6059;
+}
+
+.content-copy li {
+  margin: 0.45rem 0;
+}
+
+.legal-copy {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ---------- Timeline ---------- */
+.timeline {
+  padding-left: 28px;
+  position: relative;
+}
+
+.timeline::before {
+  width: 2px;
+  content: "";
+  position: absolute;
+  top: 7px;
+  bottom: 7px;
+  left: 8px;
+  background: #d8e6df;
+}
+
+.timeline-item {
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.timeline-item::before {
+  width: 12px;
+  height: 12px;
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -25px;
+  background: var(--gold);
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px var(--white);
+}
+
+/* ---------- FAQ ---------- */
+.faq .accordion-button {
+  color: var(--green-dark);
+  font-weight: 700;
+}
+
+.faq .accordion-button:not(.collapsed) {
+  color: var(--green);
+  background: var(--green-soft);
+  box-shadow: none;
+}
+
+.faq .accordion-item {
+  overflow: hidden;
+  margin-bottom: 12px;
+  border: 1px solid #e1e8e4;
+  border-radius: 12px !important;
+}
+
+/* ---------- Contact ---------- */
+.contact-card {
+  padding: 28px;
+  background: var(--white);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.contact-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  color: var(--green);
+  background: var(--green-soft);
+  border-radius: 50%;
+  font-size: 1.25rem;
+}
+
+/* ---------- Tables ---------- */
+.table-package th {
+  color: var(--white);
+  background: var(--green-dark);
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  padding: 72px 0 20px;
+  color: #d7e1dc;
+  background: #0b2e23;
+}
+
+.footer a {
+  color: #d7e1dc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #f1d67e;
+}
+
+.footer-title {
+  margin-bottom: 1.2rem;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.footer-logo {
+  width: 150px;
+  max-width: 100%;
+}
+
+.footer-bottom {
+  margin-top: 35px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.9rem;
+}
+
+/* ---------- Floating Buttons ---------- */
+.floating-wa {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 1000;
+  color: var(--white);
+  background: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.sticky-quote {
+  padding: 0.6rem 1.1rem;
+  position: fixed;
+  top: 50%;
+  right: -45px;
+  z-index: 999;
+  color: #17352b;
+  background: var(--gold);
+  border-radius: 10px 10px 0 0;
+  font-weight: 800;
+  text-decoration: none;
+  transform: rotate(-90deg);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 991px) {
+  .hero {
+    min-height: 620px;
+    padding: 90px 0;
+  }
+
+  .quote-strip {
+    margin-top: -35px;
+  }
+
+  .navbar-brand img {
+    width: 190px;
+  }
+
+  .sticky-quote {
+    display: none;
+  }
+
+  .section {
+    padding: 68px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .topbar .hide-mobile {
+    display: none;
+  }
+
+  .hero {
+    min-height: 600px;
+  }
+
+  .hero h1 {
+    font-size: 2.65rem;
+  }
+
+  .page-hero {
+    padding: 85px 0 70px;
+  }
+
+  .section {
+    padding: 55px 0;
+  }
+
+  .quote-box {
+    padding: 18px;
+  }
+
+  .package-card img,
+  .hotel-card img,
+  .blog-card img {
+    height: 195px;
+  }
+}
